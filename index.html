@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Exploring the Vasulka PDF Archive</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+<header>
+<div class="heading">
+	<h1>Exploring the Vasulka PDF Archive</h1>
+	<tagline>A series of short investigations into meaningful archival access, by <a href="https://ashleyblewer.com">Ashley Blewer</a> during <a href="https://www.recurse.com/">Recurse Center</a>'s annual Never Graduate Week.</tagline>
+</div>
+<div class="cutoutBox">
+		<div class="cutout">
+	  <img src="img/duo1.jpg" alt="" title="" />
+	  <img src="img/duo1.jpg" alt="" title="" />
+	  <img src="img/duo1.jpg" alt="" title="" />
+	  <img src="img/duo1.jpg" alt="" title="" />
+	  <img src="img/duo1.jpg" alt="" title="" />
+	  <img src="img/duo1.jpg" alt="" title="" />
+	</div>
+</div>
+</header>
+<main>
+
+	<section>
+		<summary>
+		<h2>Introduction</h2>
+		<p>The <a href="http://vasulka.org/archive/sitemap.html">Vasulka PDF Archive</a> is a great, rich collection of files covering their legendary work, and the work of many other video and computer artists from the 20th century.</p><br>
+		<p>However... getting a quick understanding of what is inside of the collection, picking out things that seem interesting, or understanding the folder structure is difficult.</p><br>
+		<p>I spent a maximum of 5 days exploring some quick ways to provide better and user-friendlier access to the collection (and too much time writing docs and on this webpage itself), and these experiments are the results of that rapid-fire research! I wanted to work on things that were archivist-sized, something that could be done using one's own computer and free online resources, and not getting too heavy with things archivists usually don't have access to like cloud computing technology (which I don't really know much about anyway -- maybe next year). See <a href="https://bits.ashleyblewer.com/blog/2020/05/14/notes-on-exploring-the-vasulka-pdf-archive/">this blog</a> for technical process notes. I enjoyed working on this, and I hope you enjoy the results, too!</p>
+		</summary>
+		<aside>
+		<img src="img/current.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Freetext search</h2>
+		<p>Extracted text and added to relational database. Made a little search engine that links back to the original hosted material.</p>
+		<p><a href="https://vasulka-freetext-search.glitch.me/">Demo</a> (N.B. if the Glitch machine is waking up, your first search may take quite a while because it is waking up too; subsequent searches should be quick!)</p>
+		<p>Next steps would be: fix the slow start, add blurb and highlight where keyword appears in documents</p>
+		</summary>
+		<aside>
+		<img src="img/hollis.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Group and montage</h2>
+		<p>PDF thumbnails were grouped by likeness and montage sheets were generated.</p>
+		<p>See all ten (resized) montage sheets <a href="montage.html">here</a>.</p>
+		<p>Next steps would be: associate with filenames, make linkable</p>
+		</summary>
+		<aside>
+		<img src="img/04montage.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Folder structure</h2>
+		<p>How is the collection structured? Something difficult about the collection as it appears above is that there are so many documents and folders, it's hard to understand how they were arranged (and there are nearly 700 folders).</p>
+		<p><a href="https://vasulka-slow-structure.glitch.me/">Demo</a></p>
+		<p>Next steps would be: (basically refactor completely) improve scale issues and add files</p>
+		</summary>
+		<aside>
+		<img src="img/structure-clip2.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Tree map</h2>
+		<p>Improving upon the previous experiment, used D3 to display folders by size of contents.</p>
+		<p><a href="treemap.html">Demo</a></p>
+		<p>Next steps would be: make linkable</p>
+		</summary>
+		<aside>
+		<img src="img/treemap.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Circle map</h2>
+		<p>Well, what about a circle map instead? Again, used D3 to display folders by size of contents</p>
+		<p><a href="circlemap.html">Demo</a></p>
+		<p>Next steps would be: make linkable</p>
+		</summary>
+		<aside>
+		<img src="img/circlemap.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Word cloud</h2>
+		<p>No project is complete without wordclouds!</p>
+		<p>See all word clouds (including my first error-filled one) <a href="wordcloud.html">here</a>.</p>
+		<p>Next steps would be: add masking to color and shape wordclouds</p>
+		</summary>
+		<aside>
+		<img src="img/wordcloud4.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Text network</h2>
+		<p>Stepping up from wordclouds is generating a map of the text and the relationship between key words. This is the closest I came to accidentally making art with this collection, and my computer spent a long time processing what looked like a thousand tiny spiders.</p>
+		<p>See miscellanous screenshot outputs and download the files <a href="textnetwork.html">here</a>.</p>
+		<p>Next steps would be: explore this topic further, improve access to files by converting to JSON and rendering in D3</p>
+		</summary>
+		<aside>
+		<img src="img/03gephi.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Pixplot</h2>
+		<p><a href="https://github.com/YaleDHLab/pix-plot">This tool</a> from the Yale DH Lab made it super-easy to put a touch of machine learning onto the exported thumbnails. It looks like it'd be a pretty powerful tool with an associated CSV full of metadata, which I don't have.</p>
+		<p>Next steps would be: unsure, deploy it?</p>
+		</summary>
+		<aside>
+		<img src="img/pixplot.jpg">
+		</aside>
+	</section>
+
+	<section>
+		<summary>
+		<h2>Experiment X - Ridgelines</h2>
+		<p>I was so desperate to create a ridgeline graft that I didn't care what it was about. This is the word count for the first nine files of the first nine directories. It doesn't even look cool!</p>
+		<p>Next steps would be: collect and display useful data (and more of it)</p>
+		</summary>
+		<aside>
+		<img src="img/ridgeline.jpg">
+		</aside>
+	</section>
+</main>
+<section>
+	<h2 style="font-style:italic">And that's a wrap!</h2>
+</section>
+</body>
+</html>

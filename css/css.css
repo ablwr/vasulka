@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	font-family: Courier, monospace;
+	color: #f9eae4ff;
+  background: linear-gradient(8deg, #1f1810 23%, transparent 23%) 5px 0, 
+  linear-gradient(8deg, transparent 74%, #1f1810 78%), 
+  linear-gradient(8deg, transparent 34%, #1f1810 38%, #000 58%, transparent 62%), 
+  #444;
+	background-size: 6px 16px;
+}
+
+footer a, footer a:visited, header a, header a:visited {
+	color: white;
+}
+
+p {
+	direction: ltr;
+}
+
+header {
+	margin-bottom: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size: 1em;
+}
+
+h1, h2 {
+	font-weight: normal;
+	font-family: 'Old Standard TT', serif;
+}
+
+h1 {
+	padding-top: 25vmax;
+	padding: 2em;
+	padding-bottom: 0em;
+	font-size: 5em;
+}
+
+h2 {
+	padding: 1em;
+	font-size: 2em;
+}
+
+.heading tagline {
+	display: block;
+	margin: 2em;
+	padding: .1em;
+	font-family: 'Old Standard TT', serif;
+	background: black;
+	font-size: 2em;
+}
+
+main {
+	background: #d9cfcd;
+}
+
+section {
+	padding: 4em;
+	color: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size: 1.25em;
+}
+
+section p {
+	max-width: 28em;
+	padding-bottom: 0.75em;
+}
+
+section:nth-child(odd) {
+	background: #f9eae4ff;
+	justify-items: left;
+	clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
+}
+
+section:nth-child(even) {
+	background: #e8d3ceff;
+	justify-items: right;
+	direction: rtl;
+	clip-path: polygon(0% 0%, 100% -50px, 100% 100%, 0% calc(100% + 50px));
+}
+
+section img {
+	max-width: 500px;
+}
+
+
+/* magazine cutup look */
+
+.cutoutBox {
+	display: grid;
+	justify-content: center;
+	padding: 5em;
+}
+
+.cutout {
+  position: relative;
+	width: 345px;
+	height: 550px;
+}
+
+.cutout > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cutout > img:nth-of-type(1) {
+  opacity: 1;
+  clip-path: polygon(117.68% 29.87%, 34.87% 57.49%, -1.54% 56.95%, -5.78% 24.88%);
+  transform: translateY(-24%) translateX(-15%);
+  z-index: 10;
+}
+
+.cutout > img:nth-of-type(2) {
+  opacity: 1;
+  clip-path: polygon(68.22% 22.64%, 98.66% 38.48%, 23.59% 32.93%, 7.36% 16.67%, 47.8% 12.34%);
+  transform: translateX(1.5%);
+  z-index: 9;
+}
+
+.cutout > img:nth-of-type(3) {
+  opacity: 1;
+  clip-path: polygon(81.56% 15.03%, 112.56% -1.7%, 110.46% 22.89%, 108.47% 74.56%, 53.99% 75.25%, 32% 51.46%, 54.99% 34.17%);
+transform: translateX(8%);
+  z-index: 8;
+}
+
+.cutout > img:nth-of-type(4) {
+  opacity: 1;
+  clip-path: polygon(102.15% 63.87%, 96.46% 34.27%, 62.2% 67.81%, 43.5% 74.22%, 114.42% 93.40%);
+  transform: scale(1.1);
+  z-index: 11;
+}
+
+.cutout > img:nth-of-type(5) {
+  opacity: 1;
+  clip-path: polygon(23.34% 83.14%, 102.25% 60.79%, 25.74% 97.54%, -5.33% 104.89%, -7.74% 77.8%);
+  transform: scale(1.03) translateX(-1.5%) translateY(1%) rotate(0.2deg);
+  z-index: 11;
+}
